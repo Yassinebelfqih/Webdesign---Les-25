@@ -1,0 +1,91 @@
+/* || KOP */
+.title {
+  text-align: center;
+  font-family: Impact;
+  color: #ecf39e;
+  background-color: #90a955;
+}
+/* || End KOP */
+
+/* || Accordion */
+
+/* Positioneert de pijl naar rechts */
+.ui-accordion-header {
+  position: relative;
+  padding-right: 2em; /* ruimte rechts voor de pijl */
+  background-color: #31572c;
+  color: wheat;
+}
+
+.ui-accordion-header .ui-icon {
+  position: absolute;
+  right: 0.75em;
+  top: 50%;
+  transform: translateY(-50%);
+  left: auto !important;
+}
+
+/* Responsive*/
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+#accordion {
+  width: 100%;
+}
+
+.ui-accordion-header {
+  font-size: 1.2em;
+  padding: 1em;
+  word-wrap: break-word;
+}
+
+.ui-accordion-content {
+  font-size: 1em;
+  padding: 1em;
+}
+
+/* kleur aanpassen van de pijl(angle-down) */
+.ui-icon {
+  filter: brightness(0) invert(1);
+}
+
+.ui-accordion-header .ui-icon {
+  position: absolute;
+  right: 0.5em;
+  top: 50%;
+  transform: translateY(-50%);
+  left: auto !important; /* overschrijft de standaard linkerpositie */
+}
+/* || End Accordion */
+
+main {
+  background-color: #4f772d;
+  height: 100vh;
+}
+
+/* || Footer */
+
+.voettekst {
+  background-color: #31572c;
+  color: white;
+  height: 200px;
+  margin-top: -17px;
+  padding: 8px;
+}
+
+/* || Footer */
+
+/* || Mediaquery */
+@media (max-width: 600px) {
+  .ui-accordion-header {
+    font-size: 1em;
+  }
+
+  .ui-accordion-content {
+    font-size: 0.95em;
+  }
+}
+/* || End Mediaquery */
